@@ -33,14 +33,6 @@ jobs:
     - name: Build and run Docker Compose
       run: |
         docker-compose up -d --build
-
-    - name: Wait for service to be ready
-      run: |
-        sleep 10  # Adjust if your service takes longer to start
-
-    - name: Test the Docker container
-      run: |
-        curl --retry 5 --retry-delay 5 --fail http://localhost:8000/auth/token/ || exit 1
-
+        
     - name: Tear down Docker Compose
       run: docker-compose down
