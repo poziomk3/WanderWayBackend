@@ -1,0 +1,41 @@
+name: Docker Compose Build and Test
+
+on:
+  push:
+    branches:
+      - main  # Trigger on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Log in to Docker Hub
+      uses: docker/login-action@v2
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+
+    - name: Build and run Docker Compose
+      run: |
+        docker-compose up -d --build
+
+    - name: Wait for service to be ready
+      run: |
+        sleep 10  # Adjust if your service takes longer to start
+
+    - name: Test the Docker container
+      run: |
+        curl --retry 5 --retry-delay 5 --fail http://localhost:8000 || exit 1
+
+    - name: Tear down Docker Compose
+      run: docker-compose down
