@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
@@ -25,13 +24,15 @@ SECRET_KEY = 'django-insecure-8obsm+6%hqu_y9i!u+b&us@(0c8rq91tbgy40=^)#buxb_*ek5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['localhost',
+                 '127.0.0.1',
+                 '10.0.2.2', ]
 
 # Application definition
 
 INSTALLED_APPS = [
     'WanderWayBackend',
+    'corsheaders',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -48,7 +49,9 @@ INSTALLED_APPS = [
     'dj_rest_auth.registration',
 ]
 SITE_ID = 1
-
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000", "http://10.0.2.2"  # or the domain of your frontend app
+]
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -57,7 +60,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'allauth.account.middleware.AccountMiddleware'
+    'allauth.account.middleware.AccountMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ACCOUNT_EMAIL_VERIFICATION = 'none'
@@ -86,7 +90,7 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.BasicAuthentication',  # Optional: basic username/password
         'rest_framework.authentication.SessionAuthentication',  # Optional: Django session auth
-        'rest_framework.authentication.TokenAuthentication',    # Token-based auth
+        'rest_framework.authentication.TokenAuthentication',  # Token-based auth
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
     'DEFAULT_PERMISSION_CLASSES': [
@@ -95,9 +99,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-
 WSGI_APPLICATION = 'WanderWayBackend.wsgi.application'
-
 
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
@@ -108,7 +110,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.1/ref/settings/#auth-password-validators
@@ -128,7 +129,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/5.1/topics/i18n/
 
@@ -139,7 +139,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
