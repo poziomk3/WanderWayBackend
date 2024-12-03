@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://ridewithgps.com/">
+  <metadata>
+    <name>rt1</name>
+    <link href="https://ridewithgps.com/routes/49189384">
+      <text>rt1</text>
+    </link>
+    <time>2024-12-03T20:12:07Z</time>
+  </metadata>
+  <wpt lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>6</extensions>
+      <cmt>Start of route</cmt>
+  </wpt>
+  <wpt lat="51.10993" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+	  <cmt>Turn left</cmt>
+  </wpt>
+  <wpt lat="51.10956" lon="17.03193">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>End of route</cmt>
+  </wpt>
+  <rte>
+    <rtept lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>6</extensions>
+      <cmt>Start of route</cmt>
+    </rtept>
+    <rtept lat="51.10811" lon="17.020429">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.108039" lon="17.02046">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10796" lon="17.02083">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.107859" lon="17.021089">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="51.10787" lon="17.02111">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.108099" lon="17.021369">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.108029" lon="17.0218">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10993" lon="17.022029">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109979" lon="17.02271">
+      <cmt>Turn right onto Bulwar Tadka Jasińskiego</cmt>
+    </rtept>
+    <rtept lat="51.10995" lon="17.02272">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109909" lon="17.023139">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10986" lon="17.023169">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10957" lon="17.02423">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10993" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+	  <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110649" lon="17.02482">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110629" lon="17.02491">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1106" lon="17.0249">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110429" lon="17.02573">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110229" lon="17.026139">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110289" lon="17.0263">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.110269" lon="17.02648">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109819" lon="17.0289">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109899" lon="17.02893">
+      <cmt>Turn right onto Ruska</cmt>
+    </rtept>
+    <rtept lat="51.10988" lon="17.02901">
+      <cmt>Turn left onto Kiełbaśnicza</cmt>
+    </rtept>
+    <rtept lat="51.109819" lon="17.029069">
+      <cmt>Turn slight left onto Plac Solny</cmt>
+    </rtept>
+    <rtept lat="51.109599" lon="17.03013">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10964" lon="17.03026">
+      <cmt>Turn slight right onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.031499">
+      <cmt>Turn left onto Rynek Ratusz</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.031499">
+      <cmt>Turn right onto Rynek Ratusz</cmt>
+    </rtept>
+    <rtept lat="51.109669" lon="17.03165">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10964" lon="17.03174">
+      <cmt>End of route</cmt>
+    </rtept>
+	<rtept lat="51.10956" lon="17.03193">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>End of route</cmt>
+    </rtept>
+  </rte>
+</gpx>
