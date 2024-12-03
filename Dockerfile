@@ -15,6 +15,5 @@ RUN pip install -r requirements.txt
 # Copy the rest of your Django application code
 COPY . /app/
 
-USER root
 # Run migrations and start the Django development server
-CMD ["python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:8000"]
+CMD ["sh", "-c", "python manage.py migrate --noinput && python manage.py collectstatic --noinput && python manage.py runserver 0.0.0.0:8000"]
