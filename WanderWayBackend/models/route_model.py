@@ -1,8 +1,6 @@
 from django.db import models
 from rest_framework.authtoken.admin import User
 
-from WanderWayBackend.models.poi_model import POI
-
 
 class Route(models.Model):
     id = models.AutoField(primary_key=True)

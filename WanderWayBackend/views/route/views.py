@@ -1,3 +1,4 @@
+from django.http import FileResponse
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -7,14 +8,25 @@ from WanderWayBackend.serializers import POISerializer
 
 
 class GetAllPOIs(APIView):
+    """
+        get:
+        Return a list of all POIs.
+    """
     permission_classes = [AllowAny]
+
     def get(self, request):
         pois = POI.objects.all()
         serializer = POISerializer(pois, many=True)
         return Response({'pois': serializer.data})
 
+
 class GetPOI(APIView):
+    """
+        get:
+        Return a POI by its ID.
+    """
     permission_classes = [AllowAny]
+
     def get(self, request, poi_id):
         try:
             poi = POI.objects.get(id=poi_id)
@@ -23,8 +35,14 @@ class GetPOI(APIView):
         except POI.DoesNotExist:
             return Response({'error': 'POI not found'}, status=404)
 
+
 class GenRoutes(APIView):
+    """
+        post:
+        Generate routes based on provided POIs and preferences.
+    """
     permission_classes = [IsAuthenticated]
+
     def post(self, request):
         pois = request.data.get('pois')
         if not pois:
