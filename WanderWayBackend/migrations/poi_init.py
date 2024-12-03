@@ -51,6 +51,32 @@ def load_initial_data(apps, schema_editor):
         latitude=51.109938,
         longitude=17.024563
     )
+    poi_model.objects.create(
+        name="Hala Targowa",
+        description="Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.",
+        latitude=51.112562,
+        longitude=17.039813
+    )
+    poi_model.objects.create(
+        name="Most Grunwaldzki",
+        description="Most drogowy wiszący nad Odrą we Wrocławiu, zbudowany w latach 1908-1910. Początkowo most nosił nazwę Mostu Cesarskiego, a następnie Mostu Wolności.",
+        latitude=51.109437,
+        longitude=17.052563
+    )
+    poi_model.objects.create(
+        name="Muzeum Narodowe",
+        description="Jedno z głównych muzeów Wrocławia i Dolnego Śląska. Zbiory muzeum obejmują przede wszystkim malarstwo i rzeźbę, ze szczególnym uwzględnieniem sztuki całego Śląska.",
+        latitude=51.110937,
+        longitude=17.047688
+    )
+    poi_model.objects.create(
+        name="Wrocławska Fontanna Multimedialna",
+        description="Fontanna we Wrocławiu, otoczona pergolą, przy Hali Stulecia. Jest największą fontanną w Polsce i jedną z największych w Europie.",
+        latitude=51.108812,
+        longitude=17.078938
+    )
+
+
 
 
 class Migration(migrations.Migration):
