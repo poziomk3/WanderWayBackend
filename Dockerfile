@@ -15,6 +15,7 @@ RUN pip install -r requirements.txt
 # Copy the rest of your Django application code
 COPY . /app/
 
+USER root
 # Run migrations and start the Django development server
-RUN chmod +x start.sh
+RUN chmod +x /app/start.sh
 CMD ["./start.sh"]
