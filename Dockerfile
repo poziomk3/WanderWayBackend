@@ -17,5 +17,4 @@ COPY . /app/
 
 USER root
 # Run migrations and start the Django development server
-RUN chmod +x /app/start.sh
-CMD ["./start.sh"]
+CMD ["sh -c 'python3 manage.py migrate --noinput && python3 manage.py collectstatic --noinput && exec python3 manage.py runserver 0.0.0.0:8000'"]
