@@ -1,5 +1,8 @@
 import os.path
 from django.http import FileResponse
+from drf_yasg import openapi
+from drf_yasg.utils import swagger_auto_schema
+from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -14,8 +17,31 @@ class GetAllPOIs(APIView):
         get:
         Return a list of all POIs.
     """
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        responses={
+            status.HTTP_200_OK: openapi.Schema(
+                title="POIs",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "pois": openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(
+                            type=openapi.TYPE_OBJECT,
+                            properties={
+                                "id": openapi.Schema(type=openapi.TYPE_INTEGER),
+                                "name": openapi.Schema(type=openapi.TYPE_STRING),
+                                "description": openapi.Schema(type=openapi.TYPE_STRING),
+                                "latitude": openapi.Schema(type=openapi.TYPE_NUMBER),
+                                "longitude": openapi.Schema(type=openapi.TYPE_NUMBER),
+                            },
+                        ),
+                    ),
+                },
+            )
+        },
+    )
     def get(self, request):
         pois = POI.objects.all()
         serializer = POISerializer(pois, many=True)
@@ -27,8 +53,30 @@ class GetPOI(APIView):
         get:
         Return a POI by its ID.
     """
-    permission_classes = [AllowAny]
+    permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        responses={
+            status.HTTP_200_OK: openapi.Schema(
+                title="POI",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "id": openapi.Schema(type=openapi.TYPE_INTEGER),
+                    "name": openapi.Schema(type=openapi.TYPE_STRING),
+                    "description": openapi.Schema(type=openapi.TYPE_STRING),
+                    "latitude": openapi.Schema(type=openapi.TYPE_NUMBER),
+                    "longitude": openapi.Schema(type=openapi.TYPE_NUMBER),
+                },
+            ),
+            status.HTTP_404_NOT_FOUND: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
     def get(self, request, poi_id):
         try:
             poi = POI.objects.get(id=poi_id)
@@ -42,9 +90,44 @@ class GenRoutes(APIView):
     """
         post:
         Generate routes based on provided POIs and preferences.
+        At this time the content of both 'pois' and 'preferences' is ignored.
     """
     permission_classes = [IsAuthenticated]
 
+    @swagger_auto_schema(
+        request_body=openapi.Schema(
+            type=openapi.TYPE_OBJECT,
+            properties={
+                'pois': openapi.Schema(
+                    type=openapi.TYPE_ARRAY,
+                    items=openapi.Schema(type=openapi.TYPE_INTEGER),
+                ),
+                'preferences': openapi.Schema(
+                    type=openapi.TYPE_OBJECT,
+                    properties={},
+                ),
+            },
+        ),
+        responses={
+            status.HTTP_200_OK: openapi.Schema(
+                title="Route IDs",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "routeIds": openapi.Schema(
+                        type=openapi.TYPE_ARRAY,
+                        items=openapi.Schema(type=openapi.TYPE_INTEGER),
+                    ),
+                },
+            ),
+            status.HTTP_400_BAD_REQUEST: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
     def post(self, request):
         pois = request.data.get('pois')
         if not pois:
@@ -63,6 +146,23 @@ class GetRoute(APIView):
         Return a route by its ID.
     """
     permission_classes = [IsAuthenticated]
+
+    @swagger_auto_schema(
+        responses={
+            status.HTTP_200_OK: openapi.Response(
+                description="Route file",
+                content={'application/gpx+xml': {}},
+                schema = openapi.Schema(type=openapi.TYPE_FILE),
+            ),
+            status.HTTP_404_NOT_FOUND: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
     def get(self, request, route_id):
         if not route_id:
             return Response({'error': 'No route ID provided'}, status=400)
