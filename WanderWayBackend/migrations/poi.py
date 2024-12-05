@@ -17,6 +17,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('latitude', models.FloatField()),
                 ('longitude', models.FloatField()),
+                ('imgURI', models.CharField(default='', max_length=100)),
             ],
         ),
     ]
