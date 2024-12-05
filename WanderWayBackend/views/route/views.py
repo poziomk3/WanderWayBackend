@@ -1,3 +1,4 @@
+import os.path
 from django.http import FileResponse
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
@@ -5,6 +6,7 @@ from rest_framework.views import APIView
 from WanderWayBackend.models.poi_model import POI
 from WanderWayBackend.models.route_model import Route
 from WanderWayBackend.serializers import POISerializer
+from WanderWayBackend.settings import BASE_DIR
 
 
 class GetAllPOIs(APIView):
@@ -53,3 +55,21 @@ class GenRoutes(APIView):
 
         route_ids = Route.objects.all().values_list('id', flat=True)
         return Response({'routeIds': route_ids})
+
+
+class GetRoute(APIView):
+    """
+        get:
+        Return a route by its ID.
+    """
+    permission_classes = [IsAuthenticated]
+    def get(self, request, route_id):
+        if not route_id:
+            return Response({'error': 'No route ID provided'}, status=400)
+        try:
+            route = Route.objects.get(id=route_id)
+            file_name = route.filePath
+            file_path = os.path.join(BASE_DIR, 'gpx', file_name)
+            return FileResponse(open(file_path), 'rb')
+        except Route.DoesNotExist:
+            return Response({'error': 'Route not found'}, status=404)
