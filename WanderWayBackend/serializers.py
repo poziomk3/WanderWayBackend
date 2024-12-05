@@ -4,4 +4,4 @@ from WanderWayBackend.models.poi_model import POI
 class POISerializer(serializers.ModelSerializer):
     class Meta:
         model = POI
-        fields = '__all__'
+        fields = ['id', 'name', 'description', 'latitude', 'longitude']

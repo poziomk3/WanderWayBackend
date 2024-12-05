@@ -86,6 +86,32 @@ class GetPOI(APIView):
             return Response({'error': 'POI not found'}, status=404)
 
 
+class GetPOIimg(APIView):
+    """
+        get:
+        Return a POI image by its ID.
+    """
+    permission_classes = [AllowAny]
+
+    def get(self, request, poi_id):
+        try:
+            poi = POI.objects.get(id=poi_id)
+            filename = poi.imgURI
+            img_path = os.path.join(BASE_DIR, 'images', 'poi', filename)
+            try:
+                img_file = open(img_path, 'rb')
+                return FileResponse(
+                    img_file,
+                    as_attachment=False,
+                    filename=filename,
+                    content_type='image/jpeg'
+                )
+            except FileNotFoundError:
+                return Response({'error': 'File not found on server'}, status=404)
+        except POI.DoesNotExist:
+            return Response({'error': 'POI not found'}, status=404)
+
+
 class GenRoutes(APIView):
     """
         post:
