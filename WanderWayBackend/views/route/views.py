@@ -93,6 +93,22 @@ class GetPOIimg(APIView):
     """
     permission_classes = [AllowAny]
 
+    @swagger_auto_schema(
+        responses={
+            status.HTTP_200_OK: openapi.Response(
+                description="Image file",
+                content={'image/jpeg': {}},
+                schema=openapi.Schema(type=openapi.TYPE_FILE),
+            ),
+            status.HTTP_404_NOT_FOUND: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
     def get(self, request, poi_id):
         try:
             poi = POI.objects.get(id=poi_id)
