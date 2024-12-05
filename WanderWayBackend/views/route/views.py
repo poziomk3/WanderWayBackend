@@ -70,6 +70,15 @@ class GetRoute(APIView):
             route = Route.objects.get(id=route_id)
             file_name = route.filePath
             file_path = os.path.join(BASE_DIR, 'gpx', file_name)
-            return FileResponse(open(file_path), 'rb')
+            try:
+                route_file = open(file_path, 'rb')  # Open in binary mode
+                return FileResponse(
+                    route_file,
+                    as_attachment=True,
+                    filename=file_name,
+                    content_type='application/gpx+xml'
+                )
+            except FileNotFoundError:
+                return Response({'error': 'File not found on server'}, status=404)
         except Route.DoesNotExist:
             return Response({'error': 'Route not found'}, status=404)
