@@ -3,6 +3,7 @@ from webbrowser import Error
 
 import gpxpy
 import requests
+from decouple import config
 from polyline import polyline
 
 from WanderWayBackend.models.route_model import Route
@@ -54,7 +55,7 @@ def _generate_google_maps_url(encoded_polyline, api_key, size="1280x720"):
     return f"https://maps.googleapis.com/maps/api/staticmap?size={size}&path=enc:{encoded_polyline}&key={api_key}"
 
 def generate_route_img(route_file, route):
-    api_key = "YOUR_API_KEY"
+    api_key = config('GOOGLE_MAPS_API_KEY')
     points = parse_gpx(route_file)
     encoded_polyline = _encode_polyline(points)
     url = _generate_google_maps_url(encoded_polyline, api_key)
