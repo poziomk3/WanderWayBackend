@@ -230,6 +230,39 @@ class GetRouteImg(APIView):
     """
     permission_classes = [AllowAny]
 
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter(
+                'imgtype',
+                openapi.IN_QUERY,
+                type=openapi.TYPE_STRING,
+                enum=['roadmap', 'satellite', 'hybrid', 'terrain'],
+                default='roadmap',
+                description='Type of image to return',
+            ),
+        ],
+        responses={
+            status.HTTP_200_OK: openapi.Response(
+                description="Image file",
+                content={'image/jpeg': {}},
+                schema=openapi.Schema(type=openapi.TYPE_FILE),
+            ),
+            status.HTTP_400_BAD_REQUEST: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+            status.HTTP_404_NOT_FOUND: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
     def get(self, request, route_id):
         img_type = request.GET.get('imgtype', 'roadmap')
         if img_type not in ['roadmap', 'satellite', 'hybrid', 'terrain']:
