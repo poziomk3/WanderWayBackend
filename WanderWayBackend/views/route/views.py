@@ -10,6 +10,7 @@ from WanderWayBackend.models.poi_model import POI
 from WanderWayBackend.models.route_model import Route
 from WanderWayBackend.serializers import POISerializer
 from WanderWayBackend.settings import BASE_DIR
+from WanderWayBackend.views.route.lib import *
 
 
 class GetAllPOIs(APIView):
@@ -86,10 +87,10 @@ class GetPOI(APIView):
             return Response({'error': 'POI not found'}, status=404)
 
 
-class GetPOIimg(APIView):
+class GetPOIImg(APIView):
     """
         get:
-        Return a POI image by its ID.
+        Return a POI image by the POI's ID.
     """
     permission_classes = [AllowAny]
 
@@ -206,21 +207,49 @@ class GetRoute(APIView):
         },
     )
     def get(self, request, route_id):
-        if not route_id:
-            return Response({'error': 'No route ID provided'}, status=400)
-        try:
-            route = Route.objects.get(id=route_id)
-            file_name = route.filePath
-            file_path = os.path.join(BASE_DIR, 'gpx', file_name)
-            try:
-                route_file = open(file_path, 'rb')  # Open in binary mode
-                return FileResponse(
-                    route_file,
-                    as_attachment=True,
-                    filename=file_name,
-                    content_type='application/gpx+xml'
-                )
-            except FileNotFoundError:
-                return Response({'error': 'File not found on server'}, status=404)
-        except Route.DoesNotExist:
-            return Response({'error': 'Route not found'}, status=404)
+        route, op_status = get_route_obj(route_id)
+        if not route:
+            return Response({'error': op_status}, status=404)
+
+        file, filename, op_status = get_route_file(route)
+        if not file:
+            return Response({'error': op_status}, status=404)
+
+        return FileResponse(
+            file,
+            as_attachment=False,
+            filename=filename,
+            content_type='application/gpx+xml'
+        )
+
+
+class GetRouteImg(APIView):
+    """
+        get:
+        Return a Route image by the route's ID.
+    """
+    permission_classes = [AllowAny]
+
+    def get(self, request, route_id):
+        route, op_status = get_route_obj(route_id)
+        if not route:
+            return Response({'error': op_status}, status=404)
+
+        route_img, filename, op_status = get_route_img(route)
+
+        if not route_img:
+            route_file, filename, op_status = get_route_file(route)
+            if not route_file:
+                return Response({'error': op_status}, status=404)
+
+            if generate_route_img(route_file, route):
+                route_img, filename, op_status = get_route_img(route)
+            else:
+                return Response({'error': 'Failed to generate route image'}, status=500)
+
+        return FileResponse(
+            route_img,
+            as_attachment=False,
+            filename=filename,
+            content_type='image/jpeg'
+        )
