@@ -231,21 +231,13 @@ class GetRouteImg(APIView):
     permission_classes = [AllowAny]
 
     def get(self, request, route_id):
-        route, op_status = get_route_obj(route_id)
-        if not route:
-            return Response({'error': op_status}, status=404)
+        img_type = request.GET.get('imgtype', 'roadmap')
+        if img_type not in ['roadmap', 'satellite', 'hybrid', 'terrain']:
+            return Response({'error': 'Invalid image type'}, status=400)
 
-        route_img, filename, op_status = get_route_img(route)
-
+        route_img, filename, op_status = get_route_img(route_id, img_type)
         if not route_img:
-            route_file, filename, op_status = get_route_file(route)
-            if not route_file:
-                return Response({'error': op_status}, status=404)
-
-            if generate_route_img(route_file, route):
-                route_img, filename, op_status = get_route_img(route)
-            else:
-                return Response({'error': 'Failed to generate route image'}, status=500)
+            return Response({'error': op_status}, status=404)
 
         return FileResponse(
             route_img,
