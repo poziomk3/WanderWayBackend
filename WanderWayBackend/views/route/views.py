@@ -7,9 +7,7 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from WanderWayBackend.models.poi_model import POI
-from WanderWayBackend.models.route_model import Route
 from WanderWayBackend.serializers import POISerializer
-from WanderWayBackend.settings import BASE_DIR
 from WanderWayBackend.views.route.lib import *
 
 
@@ -111,22 +109,16 @@ class GetPOIImg(APIView):
         },
     )
     def get(self, request, poi_id):
-        try:
-            poi = POI.objects.get(id=poi_id)
-            filename = poi.imgURI
-            img_path = os.path.join(BASE_DIR, 'images', 'poi', filename)
-            try:
-                img_file = open(img_path, 'rb')
-                return FileResponse(
-                    img_file,
-                    as_attachment=False,
-                    filename=filename,
-                    content_type='image/jpeg'
-                )
-            except FileNotFoundError:
-                return Response({'error': 'File not found on server'}, status=404)
-        except POI.DoesNotExist:
-            return Response({'error': 'POI not found'}, status=404)
+        img_file, filename, op_status = get_poi_img(poi_id)
+        if not img_file:
+            return Response({'error': op_status}, status=404)
+
+        return FileResponse(
+            img_file,
+            as_attachment=False,
+            filename=filename,
+            content_type='image/jpeg'
+        )
 
 
 class GenRoutes(APIView):
