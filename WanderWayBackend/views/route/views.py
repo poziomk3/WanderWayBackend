@@ -7,9 +7,8 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from WanderWayBackend.models.poi_model import POI
-from WanderWayBackend.models.route_model import Route
 from WanderWayBackend.serializers import POISerializer
-from WanderWayBackend.settings import BASE_DIR
+from WanderWayBackend.views.route.lib import *
 
 
 class GetAllPOIs(APIView):
@@ -86,10 +85,10 @@ class GetPOI(APIView):
             return Response({'error': 'POI not found'}, status=404)
 
 
-class GetPOIimg(APIView):
+class GetPOIImg(APIView):
     """
         get:
-        Return a POI image by its ID.
+        Return a POI image by the POI's ID.
     """
     permission_classes = [AllowAny]
 
@@ -110,22 +109,16 @@ class GetPOIimg(APIView):
         },
     )
     def get(self, request, poi_id):
-        try:
-            poi = POI.objects.get(id=poi_id)
-            filename = poi.imgURI
-            img_path = os.path.join(BASE_DIR, 'images', 'poi', filename)
-            try:
-                img_file = open(img_path, 'rb')
-                return FileResponse(
-                    img_file,
-                    as_attachment=False,
-                    filename=filename,
-                    content_type='image/jpeg'
-                )
-            except FileNotFoundError:
-                return Response({'error': 'File not found on server'}, status=404)
-        except POI.DoesNotExist:
-            return Response({'error': 'POI not found'}, status=404)
+        img_file, filename, op_status = get_poi_img(poi_id)
+        if not img_file:
+            return Response({'error': op_status}, status=404)
+
+        return FileResponse(
+            img_file,
+            as_attachment=False,
+            filename=filename,
+            content_type='image/jpeg'
+        )
 
 
 class GenRoutes(APIView):
@@ -206,21 +199,74 @@ class GetRoute(APIView):
         },
     )
     def get(self, request, route_id):
-        if not route_id:
-            return Response({'error': 'No route ID provided'}, status=400)
-        try:
-            route = Route.objects.get(id=route_id)
-            file_name = route.filePath
-            file_path = os.path.join(BASE_DIR, 'gpx', file_name)
-            try:
-                route_file = open(file_path, 'rb')  # Open in binary mode
-                return FileResponse(
-                    route_file,
-                    as_attachment=True,
-                    filename=file_name,
-                    content_type='application/gpx+xml'
-                )
-            except FileNotFoundError:
-                return Response({'error': 'File not found on server'}, status=404)
-        except Route.DoesNotExist:
-            return Response({'error': 'Route not found'}, status=404)
+        route, op_status = get_route_obj(route_id)
+        if not route:
+            return Response({'error': op_status}, status=404)
+
+        file, filename, op_status = get_route_file(route)
+        if not file:
+            return Response({'error': op_status}, status=404)
+
+        return FileResponse(
+            file,
+            as_attachment=False,
+            filename=filename,
+            content_type='application/gpx+xml'
+        )
+
+
+class GetRouteImg(APIView):
+    """
+        get:
+        Return a Route image by the route's ID.
+    """
+    permission_classes = [AllowAny]
+
+    @swagger_auto_schema(
+        manual_parameters=[
+            openapi.Parameter(
+                'imgtype',
+                openapi.IN_QUERY,
+                type=openapi.TYPE_STRING,
+                enum=['roadmap', 'satellite', 'hybrid', 'terrain'],
+                default='roadmap',
+                description='Type of image to return',
+            ),
+        ],
+        responses={
+            status.HTTP_200_OK: openapi.Response(
+                description="Image file",
+                content={'image/jpeg': {}},
+                schema=openapi.Schema(type=openapi.TYPE_FILE),
+            ),
+            status.HTTP_400_BAD_REQUEST: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+            status.HTTP_404_NOT_FOUND: openapi.Schema(
+                title="Error",
+                type=openapi.TYPE_OBJECT,
+                properties={
+                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                },
+            ),
+        },
+    )
+    def get(self, request, route_id):
+        img_type = request.GET.get('imgtype', 'roadmap')
+        if img_type not in ['roadmap', 'satellite', 'hybrid', 'terrain']:
+            return Response({'error': 'Invalid image type'}, status=400)
+
+        route_img, filename, op_status = get_route_img(route_id, img_type)
+        if not route_img:
+            return Response({'error': op_status}, status=404)
+
+        return FileResponse(
+            route_img,
+            as_attachment=False,
+            filename=filename,
+            content_type='image/jpeg'
+        )
