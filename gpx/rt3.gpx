@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+  <metadata>
+    <name>3</name>
+  </metadata>
+  <wpt lat="51.11256" lon="17.03981">
+      <name>Hala Targowa</name>
+	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
+	  <extensions>9</extensions>
+      <cmt>Start of route</cmt>
+  </wpt>
+  <wpt lat="51.11131" lon="17.03831">
+      <name>Plac Nowy Targ</name>
+	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
+	  <extensions>13</extensions>
+  </wpt>
+  <wpt lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+  </wpt>
+  <wpt lat="51.10994" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+  </wpt>
+  <wpt lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>6</extensions>
+      <cmt>End of route</cmt>
+  </wpt>
+  <rte>
+    <rtept lat="51.11256" lon="17.03981">
+      <name>Hala Targowa</name>
+	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
+	  <extensions>9</extensions>
+      <cmt>Start of route</cmt>
+	</rtept>
+    <rtept lat="51.11258" lon="17.03962">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="51.112359" lon="17.039589">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11237" lon="17.03942">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.112199" lon="17.03926">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11116" lon="17.038919">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11122" lon="17.03829">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11131" lon="17.03831">
+      <name>Plac Nowy Targ</name>
+	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
+	  <extensions>13</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.11122" lon="17.03829">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11129" lon="17.037599">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110849" lon="17.03746">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110809" lon="17.0373">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.11098" lon="17.036379">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11069" lon="17.03626">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110649" lon="17.035999">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.11051" lon="17.035439">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110479" lon="17.03542">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11053" lon="17.035179">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110469" lon="17.035159">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110539" lon="17.034899">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="51.110519" lon="17.034889">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110339" lon="17.034789">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11035" lon="17.03466">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110269" lon="17.03463">
+      <cmt>Turn right onto Wita Stwosza</cmt>
+    </rtept>
+    <rtept lat="51.110499" lon="17.03351">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110479" lon="17.033469">
+      <cmt>Turn right onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.110699" lon="17.03237">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10967" lon="17.03169">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.10967" lon="17.03169">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.031499">
+      <cmt>Turn right onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.10964" lon="17.03026">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.109599" lon="17.03013">
+      <cmt>Turn slight right onto Plac Solny</cmt>
+    </rtept>
+    <rtept lat="51.109819" lon="17.029069">
+      <cmt>Turn left onto Plac Solny</cmt>
+    </rtept>
+    <rtept lat="51.10979" lon="17.029059">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110269" lon="17.02648">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110289" lon="17.0263">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.110229" lon="17.026139">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11062" lon="17.0248">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10997" lon="17.02444">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10994" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.10997" lon="17.02444">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109529" lon="17.024199">
+      <cmt>Turn right onto Świętego Antoniego</cmt>
+    </rtept>
+    <rtept lat="51.109539" lon="17.024189">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109489" lon="17.02416">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109739" lon="17.02319">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.109709" lon="17.023169">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1097" lon="17.02299">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10957" lon="17.02301">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109439" lon="17.022779">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108369" lon="17.022509">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10827" lon="17.022579">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10802" lon="17.02185">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.108099" lon="17.021369">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.107859" lon="17.021089">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="51.108039" lon="17.02046">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10811" lon="17.020429">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>6</extensions>
+      <cmt>End of route</cmt>
+	</rtept>
+  </rte>
+</gpx>

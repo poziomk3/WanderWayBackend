@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+  <metadata>
+    <name>4</name>
+  </metadata>
+  <wpt lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+	  <cmt>Start of route</cmt>
+  </wpt>
+  <wpt lat="51.11131" lon="17.03831">
+      <name>Plac Nowy Targ</name>
+	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
+	  <extensions>13</extensions>
+  </wpt>
+  <wpt lat="51.11256" lon="17.03981">
+      <name>Hala Targowa</name>
+	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
+	  <extensions>9</extensions>
+  </wpt>
+  <wpt lat="51.11406" lon="17.03444">
+      <name>Gmach główny Uniwersytetu Wrocławskiego</name>
+	  <desc>Barokowy budynek o długości 171 metrów, zbudowany w XVIII wieku na miejscu dawnego zamku piastowskiego. Powstał z inicjatywy cesarza Leopolda I jako siedziba Akademii Leopoldyńskiej.</desc>
+	  <extensions>19</extensions>
+  </wpt>
+  <wpt lat="51.10994" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+  </wpt>
+  <wpt lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+  </wpt>
+  <wpt lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+	  <cmt>End of route</cmt>
+  </wpt>
+  <rte>
+	<rtept lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+	  <cmt>Start of route</cmt>
+	</rtept>
+    <rtept lat="51.10497" lon="17.03814">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.10498" lon="17.038">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105169" lon="17.03804">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105219" lon="17.03765">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10525" lon="17.03766">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.107339" lon="17.038339">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10928" lon="17.038349">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1095" lon="17.038439">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1095" lon="17.038559">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11067" lon="17.0389">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110679" lon="17.03885">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11087" lon="17.03884">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.11089" lon="17.03867">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11094" lon="17.03862">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.11098" lon="17.03825">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11131" lon="17.03831">
+      <name>Plac Nowy Targ</name>
+	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
+	  <extensions>13</extensions>
+	  <cmt>Continue</cmt>
+	</rtept>
+	<rtept lat="51.11161" lon="17.03839">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11155" lon="17.03903">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.11162" lon="17.03912">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.112199" lon="17.03926">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11220" lon="17.03955">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.11258" lon="17.03962">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+	<rtept lat="51.11256" lon="17.03981">
+      <name>Hala Targowa</name>
+	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
+	  <extensions>9</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.11258" lon="17.03962">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11285" lon="17.03964">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.11284" lon="17.03930">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11241" lon="17.038359">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.112779" lon="17.035819">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.112849" lon="17.035829">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.113119" lon="17.03463">
+      <cmt>Turn right onto Kuźnicza</cmt>
+    </rtept>
+    <rtept lat="51.113739" lon="17.03476">
+      <cmt>Turn left onto Plac Uniwersytecki</cmt>
+    </rtept>
+    <rtept lat="51.113789" lon="17.034419">
+      <cmt>Keep right onto Plac Uniwersytecki</cmt>
+    </rtept>
+	<rtept lat="51.11406" lon="17.03444">
+      <name>Gmach główny Uniwersytetu Wrocławskiego</name>
+	  <desc>Barokowy budynek o długości 171 metrów, zbudowany w XVIII wieku na miejscu dawnego zamku piastowskiego. Powstał z inicjatywy cesarza Leopolda I jako siedziba Akademii Leopoldyńskiej.</desc>
+	  <extensions>19</extensions>
+	  <cmt>Continue</cmt>
+	</rtept>
+    <rtept lat="51.114129" lon="17.034129">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.114219" lon="17.03379">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11355" lon="17.03155">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11349" lon="17.03135">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.112509" lon="17.02733">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11181" lon="17.026899">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.111689" lon="17.026709">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.111549" lon="17.02676">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11138" lon="17.02507">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.111029" lon="17.025039">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1106" lon="17.0249">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11062" lon="17.0248">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11062" lon="17.0248">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.10997" lon="17.02444">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10994" lon="17.02456">
+	  <name>Galeria Neon Side</name>
+	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
+      <extensions>7</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.10997" lon="17.02444">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11062" lon="17.0248">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11042" lon="17.02576">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.110229" lon="17.026139">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110289" lon="17.0263">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.110269" lon="17.02648">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10979" lon="17.029059">
+      <cmt>Turn left onto Plac Solny</cmt>
+    </rtept>
+    <rtept lat="51.109819" lon="17.029069">
+      <cmt>Turn right onto Plac Solny</cmt>
+    </rtept>
+    <rtept lat="51.109599" lon="17.03013">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10964" lon="17.03026">
+      <cmt>Turn slight right onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.03151">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10966" lon="17.03165">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>Make a U-turn onto Rynek</cmt>
+	</rtept>
+	<rtept lat="51.10966" lon="17.03165">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10939" lon="17.03151">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109429" lon="17.031319">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109089" lon="17.03119">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="51.109149" lon="17.03091">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10876" lon="17.03072">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1089" lon="17.02997">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108819" lon="17.02993">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.10881" lon="17.029919">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.108149" lon="17.029529">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108119" lon="17.029629">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10782" lon="17.02947">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10776" lon="17.02966">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.107299" lon="17.029349">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.10717" lon="17.029259">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1073" lon="17.02878">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+	  <cmt>End of route</cmt>
+	</rtept>
+  </rte>
+</gpx>

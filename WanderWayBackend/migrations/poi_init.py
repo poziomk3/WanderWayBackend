@@ -122,6 +122,20 @@ def load_initial_data(apps, schema_editor):
         longitude=17.029812,
         imgURI="placeholder.jpg"
     )
+    poi_model.objects.create(
+        name="Pałac Królewski we Wrocławiu",
+        description="Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.",
+        latitude=51.107437,
+        longitude=17.028813,
+        imgURI="placeholder.jpg"
+    )
+    poi_model.objects.create(
+        name="Gmach główny Uniwersytetu Wrocławskiego",
+        description="Barokowy budynek o długości 171 metrów, zbudowany w XVIII wieku na miejscu dawnego zamku piastowskiego. Powstał z inicjatywy cesarza Leopolda I jako siedziba Akademii Leopoldyńskiej.",
+        latitude=51.114062,
+        longitude=17.034438,
+        imgURI="placeholder.jpg"
+    )
 
 
 class Migration(migrations.Migration):

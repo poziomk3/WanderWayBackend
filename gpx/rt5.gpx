@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+  <metadata>
+    <name>5</name>
+  </metadata>
+  <wpt lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>Start of route</cmt>
+  </wpt>
+  <wpt lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+  </wpt>
+  <wpt lat="51.10056" lon="17.02981">
+      <name>Teatr Muzyczny „Capitol”</name>
+	  <desc>Teatr muzyczny powstały we Wrocławiu w 2004 roku, będący kontynuacją wcześniejszych teatrów istniejących w tym samym miejscu takich jak: Operetka Dolnośląska (1955 – 1976), Teatr Muzyczny (1977 – 1979), Operetka Wrocławska (1979 – 1991) oraz Teatr Muzyczny – Operetka Wrocławska (1991 – 2004).</desc>
+	  <extensions>17</extensions>
+  </wpt>
+  <wpt lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+  </wpt>
+  <wpt lat="51.11031" lon="17.04494">
+      <name>Panorama Racławicka</name>
+	  <desc>Muzeum sztuki we Wrocławiu, oddział Muzeum Narodowego we Wrocławiu, założone w 1893 we Lwowie, od 1980 we Wrocławiu.</desc>
+	  <extensions>15</extensions>
+  </wpt>
+  <wpt lat="51.11094" lon="17.04769">
+      <name>Muzeum Narodowe</name>
+	  <desc>Jedno z głównych muzeów Wrocławia i Dolnego Śląska. Zbiory muzeum obejmują przede wszystkim malarstwo i rzeźbę, ze szczególnym uwzględnieniem sztuki całego Śląska.</desc>
+	  <extensions>11</extensions>
+	  <cmt>End of route</cmt>
+  </wpt>
+  <rte>
+    <rtept lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+      <extensions>1</extensions>
+	  <cmt>Start of route</cmt>
+	</rtept>
+    <rtept lat="51.109669" lon="17.03165">
+      <cmt>Turn left onto Rynek Ratusz</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.031499">
+      <cmt>Turn right onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.109429" lon="17.031319">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.109089" lon="17.03119">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="51.109149" lon="17.03091">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10876" lon="17.03072">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1089" lon="17.02997">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108819" lon="17.02993">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.10881" lon="17.029919">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.108149" lon="17.029529">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108119" lon="17.029629">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10782" lon="17.02947">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10776" lon="17.02966">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.107299" lon="17.029349">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.10717" lon="17.029259">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.1073" lon="17.02878">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.1073" lon="17.02878">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10717" lon="17.029259">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.106709" lon="17.02894">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10661" lon="17.029069">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105889" lon="17.02848">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105409" lon="17.02929">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.10473" lon="17.030739">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.104099" lon="17.03042">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10395" lon="17.03045">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.103889" lon="17.030749">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10292" lon="17.03045">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.102679" lon="17.03036">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10252" lon="17.030109">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.10236" lon="17.03014">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.102309" lon="17.03003">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10142" lon="17.02957">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10138" lon="17.02967">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.101079" lon="17.02946">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.100979" lon="17.02997">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+	<rtept lat="51.10059" lon="17.02959">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+	<rtept lat="51.10056" lon="17.02981">
+      <name>Teatr Muzyczny „Capitol”</name>
+	  <desc>Teatr muzyczny powstały we Wrocławiu w 2004 roku, będący kontynuacją wcześniejszych teatrów istniejących w tym samym miejscu takich jak: Operetka Dolnośląska (1955 – 1976), Teatr Muzyczny (1977 – 1979), Operetka Wrocławska (1979 – 1991) oraz Teatr Muzyczny – Operetka Wrocławska (1991 – 2004).</desc>
+	  <extensions>17</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.10059" lon="17.02959">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+	<rtept lat="51.100979" lon="17.02997">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="51.101079" lon="17.02946">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10138" lon="17.02967">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10142" lon="17.02957">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.102309" lon="17.03003">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.102659" lon="17.030829">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10263" lon="17.03099">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10247" lon="17.032539">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.102579" lon="17.03258">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.102589" lon="17.03267">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.102579" lon="17.032729">
+      <cmt>Turn left onto Czysta</cmt>
+    </rtept>
+    <rtept lat="51.103429" lon="17.03298">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.103419" lon="17.03304">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.103509" lon="17.03306">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10339" lon="17.03388">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.103799" lon="17.03458">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10395" lon="17.037029">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.104099" lon="17.0371">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.104139" lon="17.0372">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10417" lon="17.03721">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.104099" lon="17.037599">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.104499" lon="17.03777">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.104789" lon="17.03794">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10478" lon="17.03824">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.10482" lon="17.03839">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+	<rtept lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+	  <cmt>Turn left</cmt>
+	</rtept>
+	<rtept lat="51.10492" lon="17.03859">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.104899" lon="17.0384">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10496" lon="17.038269">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="51.105" lon="17.038369">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.10507" lon="17.03847">
+      <cmt>Keep right</cmt>
+    </rtept>
+    <rtept lat="51.10514" lon="17.03861">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105149" lon="17.03907">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10518" lon="17.039399">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105119" lon="17.0399">
+      <cmt>Turn sharp left onto Promenada Staromiejska</cmt>
+    </rtept>
+    <rtept lat="51.10675" lon="17.04056">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.106899" lon="17.04046">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.107069" lon="17.04036">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10711" lon="17.04044">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10729" lon="17.040519">
+      <cmt>Continue onto przejście Oławskie</cmt>
+    </rtept>
+    <rtept lat="51.107739" lon="17.040779">
+      <cmt>Keep left onto przejście Oławskie</cmt>
+    </rtept>
+    <rtept lat="51.107929" lon="17.040809">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.107919" lon="17.040899">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.10791" lon="17.04113">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10876" lon="17.042749">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10874" lon="17.042849">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10892" lon="17.04292">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.109249" lon="17.0432">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.109429" lon="17.043219">
+      <cmt>Keep right</cmt>
+    </rtept>
+    <rtept lat="51.10977" lon="17.043329">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.109899" lon="17.04374">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110099" lon="17.04367">
+      <cmt>Keep right</cmt>
+    </rtept>
+    <rtept lat="51.110369" lon="17.04414">
+      <cmt>Keep right</cmt>
+    </rtept>
+	<rtept lat="51.110369" lon="17.04462">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+	<rtept lat="51.11049" lon="17.04473">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.11031" lon="17.04494">
+      <name>Panorama Racławicka</name>
+	  <desc>Muzeum sztuki we Wrocławiu, oddział Muzeum Narodowego we Wrocławiu, założone w 1893 we Lwowie, od 1980 we Wrocławiu.</desc>
+	  <extensions>15</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.11049" lon="17.04473">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.110609" lon="17.044839">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.1106" lon="17.04565">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110679" lon="17.045659">
+      <cmt>Turn right onto Jana Ewangelisty Purkyniego</cmt>
+    </rtept>
+    <rtept lat="51.11064" lon="17.046719">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.110759" lon="17.046799">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.11058" lon="17.04742">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.11094" lon="17.04769">
+      <name>Muzeum Narodowe</name>
+	  <desc>Jedno z głównych muzeów Wrocławia i Dolnego Śląska. Zbiory muzeum obejmują przede wszystkim malarstwo i rzeźbę, ze szczególnym uwzględnieniem sztuki całego Śląska.</desc>
+	  <extensions>11</extensions>
+	  <cmt>End of route</cmt>
+	</rtept>
+  </rte>
+</gpx>
