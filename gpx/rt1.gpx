@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1" creator="http://ridewithgps.com/">
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
   <metadata>
-    <name>rt1</name>
-    <link href="https://ridewithgps.com/routes/49189384">
-      <text>rt1</text>
-    </link>
-    <time>2024-12-03T20:12:07Z</time>
+    <name>1</name>
   </metadata>
   <wpt lat="51.10806" lon="17.02006">
       <name>Dworzec Świebodzki</name>
@@ -13,13 +9,12 @@
 	  <extensions>6</extensions>
       <cmt>Start of route</cmt>
   </wpt>
-  <wpt lat="51.10993" lon="17.02456">
+  <wpt lat="51.10994" lon="17.02456">
 	  <name>Galeria Neon Side</name>
 	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
       <extensions>7</extensions>
-	  <cmt>Turn left</cmt>
   </wpt>
-  <wpt lat="51.10956" lon="17.03193">
+  <wpt lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
       <extensions>1</extensions>
@@ -71,7 +66,7 @@
     <rtept lat="51.10957" lon="17.02423">
       <cmt>Turn left</cmt>
     </rtept>
-	<rtept lat="51.10993" lon="17.02456">
+	<rtept lat="51.10994" lon="17.02456">
 	  <name>Galeria Neon Side</name>
 	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
       <extensions>7</extensions>
@@ -128,7 +123,7 @@
     <rtept lat="51.10964" lon="17.03174">
       <cmt>End of route</cmt>
     </rtept>
-	<rtept lat="51.10956" lon="17.03193">
+	<rtept lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
       <extensions>1</extensions>

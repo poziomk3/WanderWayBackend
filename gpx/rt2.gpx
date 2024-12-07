@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+  <metadata>
+    <name>2</name>
+  </metadata>
+  <wpt lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>7</extensions>
+      <cmt>Start of route</cmt>
+  </wpt>
+  <wpt lat="51.10706" lon="17.02644">
+      <name>Narodowe Forum Muzyki im. Witolda Lutosławskiego</name>
+	  <desc>Jeden z największych obiektów koncertowych w Europie mieszczący się we Wrocławiu oraz nazwa instytucji kultury powstałej w 2014 roku.</desc>
+	  <extensions>14</extensions>
+  </wpt>
+  <wpt lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+  </wpt>
+  <wpt lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+  </wpt>
+  <wpt lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+	  <extensions>1</extensions>
+      <cmt>End of route</cmt>
+  </wpt>
+  <rte>
+    <rtept lat="51.10806" lon="17.02006">
+      <name>Dworzec Świebodzki</name>
+	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
+	  <extensions>7</extensions>
+      <cmt>Start of route</cmt>
+	</rtept>
+    <rtept lat="51.10811" lon="17.020429">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.108039" lon="17.02046">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10796" lon="17.02083">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.107859" lon="17.021089">
+      <cmt>Turn sharp left</cmt>
+    </rtept>
+    <rtept lat="51.10787" lon="17.02111">
+      <cmt>Keep left</cmt>
+    </rtept>
+    <rtept lat="51.108099" lon="17.021369">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.108209" lon="17.022399">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.108119" lon="17.02262">
+      <cmt>Continue onto Bulwar Tadka Jasińskiego</cmt>
+    </rtept>
+    <rtept lat="51.107119" lon="17.02518">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10715" lon="17.025219">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10702" lon="17.02548">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.106989" lon="17.025589">
+      <cmt>Keep left onto Promenada Staromiejska</cmt>
+    </rtept>
+    <rtept lat="51.106809" lon="17.026069">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10706" lon="17.02644">
+      <name>Narodowe Forum Muzyki im. Witolda Lutosławskiego</name>
+	  <desc>Jeden z największych obiektów koncertowych w Europie mieszczący się we Wrocławiu oraz nazwa instytucji kultury powstałej w 2014 roku.</desc>
+	  <extensions>14</extensions>
+	  <cmt>Turn right</cmt>
+	</rtept>
+    <rtept lat="51.10674" lon="17.02726">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.106989" lon="17.027459">
+      <cmt>Turn right onto Plac Wolności</cmt>
+    </rtept>
+    <rtept lat="51.10682" lon="17.02797">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10697" lon="17.02808">
+      <cmt>Turn right onto Plac Wolności</cmt>
+    </rtept>
+    <rtept lat="51.106849" lon="17.02847">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.107049" lon="17.028609">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.107119" lon="17.02856">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.107139" lon="17.028489">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.107319" lon="17.028679">
+      <cmt>Continue</cmt>
+    </rtept>
+	<rtept lat="51.10730" lon="17.02877">
+      <cmt>Turn left</cmt>
+    </rtept>
+	<rtept lat="51.10744" lon="17.02881">
+      <name>Pałac Królewski we Wrocławiu</name>
+	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
+	  <extensions>18</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+	<rtept lat="51.10730" lon="17.02877">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10717" lon="17.029259">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.106709" lon="17.02894">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.106219" lon="17.03025">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.105889" lon="17.031519">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105769" lon="17.03156">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105589" lon="17.03275">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105479" lon="17.032719">
+      <cmt>Turn left onto plac Teatralny</cmt>
+    </rtept>
+    <rtept lat="51.105489" lon="17.033269">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105589" lon="17.033299">
+      <cmt>Turn sharp right</cmt>
+    </rtept>
+    <rtept lat="51.1052" lon="17.03654">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10516" lon="17.036759">
+      <cmt>Turn slight right</cmt>
+    </rtept>
+    <rtept lat="51.105059" lon="17.03745">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.105219" lon="17.03765">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105169" lon="17.03804">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10498" lon="17.038">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10496" lon="17.038269">
+      <cmt>Keep right</cmt>
+    </rtept>
+    <rtept lat="51.104899" lon="17.0384">
+      <cmt>Turn right</cmt>
+    </rtept>
+	<rtept lat="51.10481" lon="17.03856">
+      <name>Bastion Sakwowy</name>
+	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
+	  <extensions>16</extensions>
+	  <cmt>Make a U-turn</cmt>
+	</rtept>
+    <rtept lat="51.104899" lon="17.0384">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.10496" lon="17.038269">
+      <cmt>Turn slight left</cmt>
+    </rtept>
+    <rtept lat="51.10498" lon="17.038">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.105169" lon="17.03804">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.105219" lon="17.03765">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10525" lon="17.03766">
+      <cmt>Continue</cmt>
+    </rtept>
+    <rtept lat="51.107339" lon="17.038339">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108099" lon="17.03822">
+      <cmt>Turn left</cmt>
+    </rtept>
+    <rtept lat="51.108019" lon="17.037329">
+      <cmt>Continue onto Krawiecka</cmt>
+    </rtept>
+    <rtept lat="51.10912" lon="17.03286">
+      <cmt>Continue onto Rynek</cmt>
+    </rtept>
+    <rtept lat="51.10939" lon="17.031499">
+      <cmt>Turn right onto Rynek Ratusz</cmt>
+    </rtept>
+    <rtept lat="51.109669" lon="17.03165">
+      <cmt>Turn right</cmt>
+    </rtept>
+    <rtept lat="51.10956" lon="17.03194">
+      <name>Stary Ratusz</name>
+	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
+	  <extensions>1</extensions>
+      <cmt>End of route</cmt>
+	</rtept>
+  </rte>
+</gpx>
