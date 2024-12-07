@@ -3,10 +3,9 @@ from django.http import FileResponse
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
 from rest_framework import status
-from rest_framework.permissions import IsAuthenticated, IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from WanderWayBackend.models.poi_model import POI
 from WanderWayBackend.serializers import POISerializer
 from WanderWayBackend.views.route.lib import *
 
@@ -90,7 +89,7 @@ class GetPOIImg(APIView):
         get:
         Return a POI image by the POI's ID.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     @swagger_auto_schema(
         responses={
@@ -187,7 +186,7 @@ class GetRoute(APIView):
             status.HTTP_200_OK: openapi.Response(
                 description="Route file",
                 content={'application/gpx+xml': {}},
-                schema = openapi.Schema(type=openapi.TYPE_FILE),
+                schema=openapi.Schema(type=openapi.TYPE_FILE),
             ),
             status.HTTP_404_NOT_FOUND: openapi.Schema(
                 title="Error",
@@ -220,7 +219,7 @@ class GetRouteImg(APIView):
         get:
         Return a Route image by the route's ID.
     """
-    permission_classes = [IsAuthenticated]
+    permission_classes = [AllowAny]
 
     @swagger_auto_schema(
         manual_parameters=[
