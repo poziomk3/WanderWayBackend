@@ -87,8 +87,41 @@ def load_initial_data(apps, schema_editor):
         longitude=17.078938,
         imgURI="placeholder.jpg"
     )
-
-
+    poi_model.objects.create(
+        name="Plac Nowy Targ",
+        description="Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.",
+        latitude=51.111312,
+        longitude=17.038312,
+        imgURI="placeholder.jpg"
+    )
+    poi_model.objects.create(
+        name="Narodowe Forum Muzyki im. Witolda Lutosławskiego",
+        description="Jeden z największych obiektów koncertowych w Europie mieszczący się we Wrocławiu oraz nazwa instytucji kultury powstałej w 2014 roku.",
+        latitude=51.107062,
+        longitude=17.026438,
+        imgURI="placeholder.jpg"
+    )
+    poi_model.objects.create(
+        name="Panorama Racławicka",
+        description="Muzeum sztuki we Wrocławiu, oddział Muzeum Narodowego we Wrocławiu, założone w 1893 we Lwowie, od 1980 we Wrocławiu.",
+        latitude=51.110312,
+        longitude=17.044938,
+        imgURI="placeholder.jpg"
+    )
+    poi_model.objects.create(
+        name="Bastion Sakwowy",
+        description="Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.",
+        latitude=51.104813,
+        longitude=17.038562,
+        imgURI="placeholder.jpg"
+    )
+    poi_model.objects.create(
+        name="Teatr Muzyczny „Capitol”",
+        description="Teatr muzyczny powstały we Wrocławiu w 2004 roku, będący kontynuacją wcześniejszych teatrów istniejących w tym samym miejscu takich jak: Operetka Dolnośląska (1955 – 1976), Teatr Muzyczny (1977 – 1979), Operetka Wrocławska (1979 – 1991) oraz Teatr Muzyczny – Operetka Wrocławska (1991 – 2004).",
+        latitude=51.100562,
+        longitude=17.029812,
+        imgURI="placeholder.jpg"
+    )
 
 
 class Migration(migrations.Migration):
