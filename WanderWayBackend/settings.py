@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/5.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
-
+from datetime import timedelta
 from pathlib import Path
 from decouple import config
 
@@ -94,6 +94,11 @@ REST_FRAMEWORK = {
 
         'rest_framework.permissions.IsAuthenticated',  # Requires authentication for all views by default
     ],
+}
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(seconds=config('ACCESS_TOKEN_LIFETIME', default=3600, cast=int)),
+    'REFRESH_TOKEN_LIFETIME': timedelta(seconds=config('REFRESH_TOKEN_LIFETIME', default=86400, cast=int)),
 }
 
 WSGI_APPLICATION = 'WanderWayBackend.wsgi.application'
