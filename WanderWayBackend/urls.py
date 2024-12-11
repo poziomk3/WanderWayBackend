@@ -27,4 +27,5 @@ urlpatterns = [
     path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     path('auth/', include('WanderWayBackend.views.auth.urls')),
     path('route/', include('WanderWayBackend.views.route.urls')),
+    path('forum/', include('WanderWayBackend.views.forum.urls')),
 ]

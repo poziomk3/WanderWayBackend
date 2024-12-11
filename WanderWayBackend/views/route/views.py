@@ -171,7 +171,7 @@ class GenRoutes(APIView):
             return Response({'error': 'No preferences provided'}, status=400)
 
         route_ids = Route.objects.all().values_list('id', flat=True)
-        return Response({'routeIds': route_ids})
+        return Response({'routeIds': route_ids}, status=201)
 
 
 class GetRoute(APIView):
