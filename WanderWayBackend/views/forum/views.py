@@ -4,4 +4,8 @@ from rest_framework.views import APIView
 
 class getPosts(APIView):
     def get(self, request):
-        # get all ForumPosts model objects
+        return Response()
+
+class createPost(APIView):
+    def post(self, request, route_id):
+        return Response()

@@ -9,6 +9,8 @@ class POISerializer(serializers.ModelSerializer):
         fields = ['id', 'name', 'description', 'latitude', 'longitude']
 
 class ForumPostSerializer(serializers.ModelSerializer):
+    author = serializers.CharField(source='author.username', read_only=True)
+
     class Meta:
         model = ForumPost
-        fields = ['id', 'title', 'body', 'author', 'date_posted']
+        fields = ['id', 'title', 'rating', 'body', 'author', 'created_at', 'route_id', 'img_url']
