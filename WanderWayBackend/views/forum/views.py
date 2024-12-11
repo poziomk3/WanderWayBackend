@@ -37,3 +37,16 @@ class createPost(APIView):
             route=route,
         )
         return Response({"post_id": post.id}, status=201)
+
+
+class getPost(APIView):
+    """
+        get:
+        Return a post by its ID.
+    """
+    permission_classes = [IsAuthenticated]
+
+    def get(self, request, post_id):
+        post = ForumPost.objects.get(id=post_id)
+        serializer = ForumPostSerializer(post)
+        return Response(serializer.data)
