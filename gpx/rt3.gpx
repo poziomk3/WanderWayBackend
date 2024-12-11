@@ -6,35 +6,35 @@
   <wpt lat="51.11256" lon="17.03981">
       <name>Hala Targowa</name>
 	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
-	  <extensions>9</extensions>
+	  <extensions><extension>9</extension></extensions>
       <cmt>Start of route</cmt>
   </wpt>
   <wpt lat="51.11131" lon="17.03831">
       <name>Plac Nowy Targ</name>
 	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
-	  <extensions>13</extensions>
+	  <extensions><extension>13</extension></extensions>
   </wpt>
   <wpt lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-      <extensions>1</extensions>
+      <extensions><extension>1</extension></extensions>
   </wpt>
   <wpt lat="51.10994" lon="17.02456">
 	  <name>Galeria Neon Side</name>
 	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
-      <extensions>7</extensions>
+      <extensions><extension>7</extension></extensions>
   </wpt>
   <wpt lat="51.10806" lon="17.02006">
       <name>Dworzec Świebodzki</name>
 	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
-	  <extensions>6</extensions>
+	  <extensions><extension>6</extension></extensions>
       <cmt>End of route</cmt>
   </wpt>
   <rte>
     <rtept lat="51.11256" lon="17.03981">
       <name>Hala Targowa</name>
 	  <desc>Hala targowa we Wrocławiu, zlokalizowana przy ul. Piaskowej 17, w pobliżu Rynku.</desc>
-	  <extensions>9</extensions>
+	  <extensions><extension>9</extension></extensions>
       <cmt>Start of route</cmt>
 	</rtept>
     <rtept lat="51.11258" lon="17.03962">
@@ -58,7 +58,7 @@
 	<rtept lat="51.11131" lon="17.03831">
       <name>Plac Nowy Targ</name>
 	  <desc>Jeden z trzech historycznych placów targowych Starego Miasta we Wrocławiu, obok Rynku i placu Solnego.</desc>
-	  <extensions>13</extensions>
+	  <extensions><extension>13</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.11122" lon="17.03829">
@@ -124,7 +124,7 @@
 	<rtept lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-      <extensions>1</extensions>
+      <extensions><extension>1</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.10967" lon="17.03169">
@@ -163,7 +163,7 @@
 	<rtept lat="51.10994" lon="17.02456">
 	  <name>Galeria Neon Side</name>
 	  <desc>Najjaśniejsze podwórko Wrocławia - Ruska 46, rozświetlone zabytkowymi neonami, to miejsce skupiające organizacje kulturalne, galerie sztuki, zespoły muzyczne, kluby, teatry, organizacje pozarządowe i artystów freelancerów, którzy mają tu swoje siedziby lub pracownie.</desc>
-      <extensions>7</extensions>
+      <extensions><extension>7</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.10997" lon="17.02444">
@@ -217,7 +217,7 @@
     <rtept lat="51.10806" lon="17.02006">
       <name>Dworzec Świebodzki</name>
 	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
-	  <extensions>6</extensions>
+	  <extensions><extension>6</extension></extensions>
       <cmt>End of route</cmt>
 	</rtept>
   </rte>

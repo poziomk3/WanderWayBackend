@@ -6,40 +6,40 @@
   <wpt lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-      <extensions>1</extensions>
+      <extensions><extension>1</extension></extensions>
 	  <cmt>Start of route</cmt>
   </wpt>
   <wpt lat="51.10744" lon="17.02881">
       <name>Pałac Królewski we Wrocławiu</name>
 	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
-	  <extensions>18</extensions>
+	  <extensions><extension>18</extension></extensions>
   </wpt>
   <wpt lat="51.10056" lon="17.02981">
       <name>Teatr Muzyczny „Capitol”</name>
 	  <desc>Teatr muzyczny powstały we Wrocławiu w 2004 roku, będący kontynuacją wcześniejszych teatrów istniejących w tym samym miejscu takich jak: Operetka Dolnośląska (1955 – 1976), Teatr Muzyczny (1977 – 1979), Operetka Wrocławska (1979 – 1991) oraz Teatr Muzyczny – Operetka Wrocławska (1991 – 2004).</desc>
-	  <extensions>17</extensions>
+	  <extensions><extension>17</extension></extensions>
   </wpt>
   <wpt lat="51.10481" lon="17.03856">
       <name>Bastion Sakwowy</name>
 	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
-	  <extensions>16</extensions>
+	  <extensions><extension>16</extension></extensions>
   </wpt>
   <wpt lat="51.11031" lon="17.04494">
       <name>Panorama Racławicka</name>
 	  <desc>Muzeum sztuki we Wrocławiu, oddział Muzeum Narodowego we Wrocławiu, założone w 1893 we Lwowie, od 1980 we Wrocławiu.</desc>
-	  <extensions>15</extensions>
+	  <extensions><extension>15</extension></extensions>
   </wpt>
   <wpt lat="51.11094" lon="17.04769">
       <name>Muzeum Narodowe</name>
 	  <desc>Jedno z głównych muzeów Wrocławia i Dolnego Śląska. Zbiory muzeum obejmują przede wszystkim malarstwo i rzeźbę, ze szczególnym uwzględnieniem sztuki całego Śląska.</desc>
-	  <extensions>11</extensions>
+	  <extensions><extension>11</extension></extensions>
 	  <cmt>End of route</cmt>
   </wpt>
   <rte>
     <rtept lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-      <extensions>1</extensions>
+      <extensions><extension>1</extension></extensions>
 	  <cmt>Start of route</cmt>
 	</rtept>
     <rtept lat="51.109669" lon="17.03165">
@@ -93,7 +93,7 @@
 	<rtept lat="51.10744" lon="17.02881">
       <name>Pałac Królewski we Wrocławiu</name>
 	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
-	  <extensions>18</extensions>
+	  <extensions><extension>18</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.1073" lon="17.02878">
@@ -159,7 +159,7 @@
 	<rtept lat="51.10056" lon="17.02981">
       <name>Teatr Muzyczny „Capitol”</name>
 	  <desc>Teatr muzyczny powstały we Wrocławiu w 2004 roku, będący kontynuacją wcześniejszych teatrów istniejących w tym samym miejscu takich jak: Operetka Dolnośląska (1955 – 1976), Teatr Muzyczny (1977 – 1979), Operetka Wrocławska (1979 – 1991) oraz Teatr Muzyczny – Operetka Wrocławska (1991 – 2004).</desc>
-	  <extensions>17</extensions>
+	  <extensions><extension>17</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.10059" lon="17.02959">
@@ -243,7 +243,7 @@
 	<rtept lat="51.10481" lon="17.03856">
       <name>Bastion Sakwowy</name>
 	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
-	  <extensions>16</extensions>
+	  <extensions><extension>16</extension></extensions>
 	  <cmt>Turn left</cmt>
 	</rtept>
 	<rtept lat="51.10492" lon="17.03859">
@@ -336,7 +336,7 @@
 	<rtept lat="51.11031" lon="17.04494">
       <name>Panorama Racławicka</name>
 	  <desc>Muzeum sztuki we Wrocławiu, oddział Muzeum Narodowego we Wrocławiu, założone w 1893 we Lwowie, od 1980 we Wrocławiu.</desc>
-	  <extensions>15</extensions>
+	  <extensions><extension>15</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.11049" lon="17.04473">
@@ -363,7 +363,7 @@
     <rtept lat="51.11094" lon="17.04769">
       <name>Muzeum Narodowe</name>
 	  <desc>Jedno z głównych muzeów Wrocławia i Dolnego Śląska. Zbiory muzeum obejmują przede wszystkim malarstwo i rzeźbę, ze szczególnym uwzględnieniem sztuki całego Śląska.</desc>
-	  <extensions>11</extensions>
+	  <extensions><extension>11</extension></extensions>
 	  <cmt>End of route</cmt>
 	</rtept>
   </rte>
