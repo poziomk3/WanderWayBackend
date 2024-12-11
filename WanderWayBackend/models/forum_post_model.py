@@ -9,5 +9,5 @@ class ForumPost(models.Model):
     body = models.TextField()
     author = models.ForeignKey(User, on_delete=models.CASCADE)  # Reference the built-in User model
     created_at = models.DateTimeField(auto_now_add=True)
-    route_id = models.ForeignKey('Route', on_delete=models.CASCADE)
+    route = models.ForeignKey('Route', on_delete=models.CASCADE)
     img_url = models.CharField(default="https://picsum.photos/1280/720", blank=True, null=True, max_length=300)

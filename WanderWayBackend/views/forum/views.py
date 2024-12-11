@@ -3,6 +3,7 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 
 from WanderWayBackend.models.forum_post_model import ForumPost
+from WanderWayBackend.models.route_model import Route
 from WanderWayBackend.serializers import ForumPostSerializer
 
 
@@ -27,11 +28,12 @@ class createPost(APIView):
     permission_classes = [IsAuthenticated]
 
     def post(self, request, route_id):
+        route = Route.objects.get(id=route_id)
         post = ForumPost.objects.create(
             title=request.data['title'],
             rating=request.data['rating'],
             body=request.data['body'],
             author=request.user,
-            route_id=route_id,
+            route=route,
         )
         return Response({"post_id": post.id}, status=201)

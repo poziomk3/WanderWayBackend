@@ -13,4 +13,4 @@ class ForumPostSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = ForumPost
-        fields = ['id', 'title', 'rating', 'body', 'author', 'created_at', 'route_id', 'img_url']
+        fields = ['id', 'title', 'rating', 'body', 'author', 'created_at', 'route', 'img_url']

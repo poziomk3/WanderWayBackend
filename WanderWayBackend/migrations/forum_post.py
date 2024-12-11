@@ -24,7 +24,7 @@ class Migration(migrations.Migration):
                 ('created_at', models.DateTimeField(auto_now_add=True)),
                 ('img_url', models.CharField(blank=True, default="https://picsum.photos/1280/720", max_length=300, null=True)),
                 ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to=settings.AUTH_USER_MODEL)),
-                ('route_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='WanderWayBackend.route')),
+                ('route', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='WanderWayBackend.route')),
             ],
         ),
     ]
