@@ -1,4 +1,3 @@
-import os.path
 from django.http import FileResponse
 from drf_yasg import openapi
 from drf_yasg.utils import swagger_auto_schema
@@ -70,7 +69,7 @@ class GetPOI(APIView):
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="POI not found"),
                 },
             ),
         },
@@ -102,7 +101,7 @@ class GetPOIImg(APIView):
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="POI not found"),
                 },
             ),
         },
@@ -157,7 +156,7 @@ class GenRoutes(APIView):
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="No POIs provided"),
                 },
             ),
         },
@@ -192,7 +191,7 @@ class GetRoute(APIView):
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="Route not found"),
                 },
             ),
         },
@@ -242,14 +241,14 @@ class GetRouteImg(APIView):
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="Invalid image type"),
                 },
             ),
             status.HTTP_404_NOT_FOUND: openapi.Schema(
                 title="Error",
                 type=openapi.TYPE_OBJECT,
                 properties={
-                    "error": openapi.Schema(type=openapi.TYPE_STRING),
+                    "error": openapi.Schema(type=openapi.TYPE_STRING, example="Failed to generate image"),
                 },
             ),
         },

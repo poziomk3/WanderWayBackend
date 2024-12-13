@@ -42,7 +42,7 @@ def get_poi_img(poi_id):
 
 def get_route_img(route_id, img_type):
     route, op_status = get_route_obj(route_id)
-    if not route: return None, op_status
+    if not route: return None, None, op_status
     filename = f"{route.id}_{img_type}.jpg"
     img_path = os.path.join(BASE_DIR, 'images', 'route', filename)
 
