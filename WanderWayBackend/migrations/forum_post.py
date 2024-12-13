@@ -10,7 +10,7 @@ class Migration(migrations.Migration):
 
     dependencies = [
         ('WanderWayBackend', 'route_init'),
-        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+        ('WanderWayBackend', 'user_init'),
     ]
 
     operations = [
