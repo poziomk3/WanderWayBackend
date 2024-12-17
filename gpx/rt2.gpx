@@ -6,35 +6,35 @@
   <wpt lat="51.10806" lon="17.02006">
       <name>Dworzec Świebodzki</name>
 	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
-	  <extensions><extension>7</extension></extension></extensions>
+	  <extensions><extension>7</extension></extensions>
       <cmt>Start of route</cmt>
   </wpt>
   <wpt lat="51.10706" lon="17.02644">
       <name>Narodowe Forum Muzyki im. Witolda Lutosławskiego</name>
 	  <desc>Jeden z największych obiektów koncertowych w Europie mieszczący się we Wrocławiu oraz nazwa instytucji kultury powstałej w 2014 roku.</desc>
-	  <extensions><extension>14</extension></extension></extensions>
+	  <extensions><extension>14</extension></extensions>
   </wpt>
   <wpt lat="51.10744" lon="17.02881">
       <name>Pałac Królewski we Wrocławiu</name>
 	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
-	  <extensions><extension>18</extension></extension></extensions>
+	  <extensions><extension>18</extension></extensions>
   </wpt>
   <wpt lat="51.10481" lon="17.03856">
       <name>Bastion Sakwowy</name>
 	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
-	  <extensions><extension>16</extension></extension></extensions>
+	  <extensions><extension>16</extension></extensions>
   </wpt>
   <wpt lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-	  <extensions><extension>1</extension></extension></extensions>
+	  <extensions><extension>1</extension></extensions>
       <cmt>End of route</cmt>
   </wpt>
   <rte>
     <rtept lat="51.10806" lon="17.02006">
       <name>Dworzec Świebodzki</name>
 	  <desc>Nieczynna stacja kolejowa w ścisłym centrum Wrocławia przy placu Orląt Lwowskich; najstarszy z trzech zachowanych do dziś pasażerskich dworców kolejowych we Wrocławiu.</desc>
-	  <extensions><extension>7</extension></extension></extensions>
+	  <extensions><extension>7</extension></extensions>
       <cmt>Start of route</cmt>
 	</rtept>
     <rtept lat="51.10811" lon="17.020429">
@@ -79,7 +79,7 @@
 	<rtept lat="51.10706" lon="17.02644">
       <name>Narodowe Forum Muzyki im. Witolda Lutosławskiego</name>
 	  <desc>Jeden z największych obiektów koncertowych w Europie mieszczący się we Wrocławiu oraz nazwa instytucji kultury powstałej w 2014 roku.</desc>
-	  <extensions><extension>14</extension></extension></extensions>
+	  <extensions><extension>14</extension></extensions>
 	  <cmt>Turn right</cmt>
 	</rtept>
     <rtept lat="51.10674" lon="17.02726">
@@ -115,7 +115,7 @@
 	<rtept lat="51.10744" lon="17.02881">
       <name>Pałac Królewski we Wrocławiu</name>
 	  <desc>Zespół pałacowy stanowiący od XVIII do XX wieku wrocławską rezydencję pruskich królów z dynastii Hohenzollernów, obecnie siedziba Muzeum Miejskiego Wrocławia.</desc>
-	  <extensions><extension>18</extension></extension></extensions>
+	  <extensions><extension>18</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
 	<rtept lat="51.10730" lon="17.02877">
@@ -175,7 +175,7 @@
 	<rtept lat="51.10481" lon="17.03856">
       <name>Bastion Sakwowy</name>
 	  <desc>Fragment dawnych fortyfikacji miasta Wrocławia, w południowo-wschodnim ich narożniku. W latach 1948–2024 wzgórze nosiło nazwę Wzgórze Partyzantów.</desc>
-	  <extensions><extension>16</extension></extension></extensions>
+	  <extensions><extension>16</extension></extensions>
 	  <cmt>Make a U-turn</cmt>
 	</rtept>
     <rtept lat="51.104899" lon="17.0384">
@@ -217,7 +217,7 @@
     <rtept lat="51.10956" lon="17.03194">
       <name>Stary Ratusz</name>
 	  <desc>Późnogotycki budynek na wrocławskim Rynku, jeden z najlepiej zachowanych historycznych ratuszy w Polsce, zarazem jeden z głównych zabytków architektonicznych Wrocławia.</desc>
-	  <extensions><extension>1</extension></extension></extensions>
+	  <extensions><extension>1</extension></extensions>
       <cmt>End of route</cmt>
 	</rtept>
   </rte>
