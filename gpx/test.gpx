@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://www.topografix.com/GPX/1/1" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd" version="1.1">
+	<metadata>
+		<name>test</name>
+	</metadata>
+	<wpt lat="51.109437" lon="17.031938">
+		<name>1</name>
+		<desc>Bottom right</desc>
+		<extensions>
+			<extension>1</extension>
+		</extensions>
+	</wpt>
+	<wpt lat="51.111437" lon="17.031938">
+		<name>2</name>
+		<desc>Top right</desc>
+		<extensions>
+			<extension>2</extension>
+		</extensions>
+	</wpt>
+	<wpt lat="51.111437" lon="17.029938">
+		<name>3</name>
+		<desc>Top left</desc>
+		<extensions>
+			<extension>3</extension>
+		</extensions>
+	</wpt>
+	<wpt lat="51.109437" lon="17.029938">
+		<name>4</name>
+		<desc>Bottom left</desc>
+		<extensions>
+			<extension>4</extension>
+		</extensions>
+	</wpt>
+	<rte>
+		<rtept lat="51.109437" lon="17.031938">
+			<name>1</name>
+			<desc>Bottom right</desc>
+			<extensions>
+				<extension>1</extension>
+			</extensions>
+			<cmt>Start of route</cmt>
+		</rtept>
+		<rtept lat="51.111437" lon="17.031938">
+			<name>2</name>
+			<desc>Top right</desc>
+			<extensions>
+				<extension>2</extension>
+			</extensions>
+			<cmt>Turn left</cmt>
+		</rtept>
+		<rtept lat="51.111437" lon="17.029938">
+			<name>3</name>
+			<desc>Top left</desc>
+			<extensions>
+				<extension>3</extension>
+			</extensions>
+			<cmt>Turn left</cmt>
+		</rtept>
+		<rtept lat="51.109437" lon="17.029938">
+			<name>4</name>
+			<desc>Bottom left</desc>
+			<extensions>
+				<extension>4</extension>
+			</extensions>
+			<cmt>End of route</cmt>
+		</rtept>
+	</rte>
+</gpx>
