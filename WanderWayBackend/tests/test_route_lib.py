@@ -13,7 +13,7 @@ class RouteLibTests(TestCase):
     def setUp(self):
         # Set up test data
         self.route = Route.objects.create(filePath='test.gpx')
-        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", longitude=40.757937, latitude=-73.985563)
+        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", latitude=40.757937, longitude=-73.985563)
 
     def test_get_route_obj(self):
         route, status = get_route_obj(self.route.id)
