@@ -93,11 +93,9 @@ def _generate_poi_img(poi: POI) -> bool:
     if not data['results']:
         return False
 
-    print(data)
-
     photo_ref = None
 
-    for place in data['results']:
+    for place in data['results'][1:]:
         if 'photos' in place.keys():
             photo_ref = place['photos'][0]['photo_reference']
             break
