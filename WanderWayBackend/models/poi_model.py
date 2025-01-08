@@ -7,7 +7,6 @@ class POI(models.Model):
     description = models.TextField()
     latitude = models.FloatField()
     longitude = models.FloatField()
-    imgURI = models.CharField(default=None, blank=True, null=True, max_length=100)
 
     def __str__(self):
         return self.id

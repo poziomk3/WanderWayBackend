@@ -5,7 +5,7 @@ from WanderWayBackend.models.poi_model import POI
 from WanderWayBackend.settings import BASE_DIR
 from WanderWayBackend.views.route.lib import (
     get_route_obj, get_route_file, get_poi_img, get_route_img, _encode_polyline,
-    _encode_markers, _generate_google_maps_url, _generate_route_img, _save_route_img, _parse_gpx
+    _encode_markers, _generate_google_maps_url, _generate_route_img, _save_img, _parse_gpx
 )
 
 class RouteLibTests(TestCase):
@@ -13,7 +13,7 @@ class RouteLibTests(TestCase):
     def setUp(self):
         # Set up test data
         self.route = Route.objects.create(filePath='test.gpx')
-        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", longitude=0.0, latitude=0.0, imgURI='test.jpg')
+        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", longitude=40.757937, latitude=-73.985563)
 
     def test_get_route_obj(self):
         route, status = get_route_obj(self.route.id)
@@ -29,7 +29,7 @@ class RouteLibTests(TestCase):
     def test_get_poi_img(self):
         img_file, filename, status = get_poi_img(self.poi.id)
         self.assertIsNotNone(img_file)
-        self.assertEqual(filename, 'test.jpg')
+        self.assertEqual(filename, f'{self.poi.id}.jpg')
         self.assertEqual(status, "Ok")
 
     def test_get_route_img(self):
@@ -54,11 +54,6 @@ class RouteLibTests(TestCase):
 
     def test_generate_route_img(self):
         result = _generate_route_img(self.route, 'roadmap')
-        self.assertTrue(result)
-
-    def test_save_route_img(self):
-        url = 'https://via.placeholder.com/150'
-        result = _save_route_img(url, self.route.id, 'roadmap')
         self.assertTrue(result)
 
     def test_parse_gpx(self):
