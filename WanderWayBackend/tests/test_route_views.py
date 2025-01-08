@@ -9,10 +9,10 @@ from WanderWayBackend.models.route_model import Route
 class RouteViewsTests(APITestCase):
 
     def setUp(self):
-        self.client: APIClient = APIClient()
+        self.client = APIClient()
         self.user = User.objects.create_user(username='testuser', password='testpassword')
         self.client.force_authenticate(user=self.user)
-        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", longitude=0.0, latitude=0.0, imgURI='test.jpg')
+        self.poi = POI.objects.create(name='Test POI', description="POI created in order to conduct unit tests.", longitude=0.0, latitude=0.0)
         self.route = Route.objects.create(filePath='test.gpx')
 
     def test_get_all_pois(self):
@@ -28,11 +28,6 @@ class RouteViewsTests(APITestCase):
         response = self.client.get(url)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['id'], self.poi.id)
-
-    def test_get_poi_img(self):
-        url = reverse('get_poi_img', args=[self.poi.id])
-        response = self.client.get(url)
-        self.assertEqual(response.status_code, status.HTTP_200_OK)
 
     def test_gen_routes(self):
         url = reverse('gen_routes')
